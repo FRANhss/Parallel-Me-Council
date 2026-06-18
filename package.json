@@ -1,0 +1,36 @@
+{
+  "name": "parallel-me-council-skill",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Parallel Me Council skill: an evidence-based decision council protocol for AI agents.",
+  "type": "module",
+  "scripts": {
+    "build": "npm run typecheck && node scripts/validate-skill.mjs && node scripts/render-sample.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint .",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "agent-skill",
+    "decision-making",
+    "parallel-me-council",
+    "slash-command",
+    "ai-workflow",
+    "decision-protocol"
+  ],
+  "author": "FRANhss",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@types/node": "^25.0.2",
+    "eslint": "^9.39.2",
+    "globals": "^16.5.0",
+    "prettier": "^3.7.4",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.49.0",
+    "vitest": "^4.0.15"
+  }
+}

@@ -1,138 +1,64 @@
 <svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>平行自我委员会</title>
+  <desc>平行自我委员会封面。隐含成员包括现实资源官、长期主义者、情绪诚实者和行动设计师。</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="640" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#080A18"/>
-      <stop offset="0.45" stop-color="#11143A"/>
-      <stop offset="1" stop-color="#071B2D"/>
+      <stop stop-color="#080716"/>
+      <stop offset="0.48" stop-color="#10132B"/>
+      <stop offset="1" stop-color="#061721"/>
     </linearGradient>
-    <radialGradient id="violetGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(210 142) rotate(38) scale(560 380)">
-      <stop stop-color="#8B5CF6" stop-opacity="0.62"/>
-      <stop offset="0.65" stop-color="#8B5CF6" stop-opacity="0"/>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(300 120) rotate(38) scale(560 420)">
+      <stop stop-color="#7C3AED" stop-opacity="0.5"/>
+      <stop offset="0.72" stop-color="#7C3AED" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="cyanGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1050 160) rotate(134) scale(540 360)">
-      <stop stop-color="#22D3EE" stop-opacity="0.46"/>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(980 230) rotate(126) scale(520 420)">
+      <stop stop-color="#22D3EE" stop-opacity="0.38"/>
       <stop offset="0.72" stop-color="#22D3EE" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="pinkGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(640 690) rotate(90) scale(540 760)">
-      <stop stop-color="#F472B6" stop-opacity="0.22"/>
-      <stop offset="0.7" stop-color="#F472B6" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="heroText" x1="126" y1="190" x2="662" y2="190" gradientUnits="userSpaceOnUse">
+    <linearGradient id="title" x1="342" y1="304" x2="938" y2="304" gradientUnits="userSpaceOnUse">
       <stop stop-color="#FFFFFF"/>
-      <stop offset="0.52" stop-color="#EDE9FE"/>
-      <stop offset="1" stop-color="#A5F3FC"/>
+      <stop offset="0.55" stop-color="#EDE9FE"/>
+      <stop offset="1" stop-color="#BFF7FF"/>
     </linearGradient>
-    <linearGradient id="panel" x1="692" y1="106" x2="1130" y2="548" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#111827" stop-opacity="0.94"/>
-      <stop offset="1" stop-color="#07111F" stop-opacity="0.86"/>
-    </linearGradient>
-    <linearGradient id="card1" x1="734" y1="218" x2="1092" y2="306" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#7C3AED" stop-opacity="0.24"/>
-      <stop offset="1" stop-color="#22D3EE" stop-opacity="0.16"/>
-    </linearGradient>
-    <linearGradient id="accent" x1="116" y1="438" x2="526" y2="438" gradientUnits="userSpaceOnUse">
+    <linearGradient id="ring" x1="360" y1="96" x2="920" y2="544" gradientUnits="userSpaceOnUse">
       <stop stop-color="#A78BFA"/>
-      <stop offset="0.55" stop-color="#22D3EE"/>
+      <stop offset="0.5" stop-color="#22D3EE"/>
       <stop offset="1" stop-color="#34D399"/>
     </linearGradient>
-    <filter id="shadow" x="-18%" y="-18%" width="136%" height="136%" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="28" stdDeviation="28" flood-color="#000000" flood-opacity="0.32"/>
-    </filter>
-    <filter id="softShadow" x="-16%" y="-16%" width="132%" height="132%" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#000000" flood-opacity="0.24"/>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="22"/>
     </filter>
     <style>
-      .font { font-family: Inter, "HarmonyOS Sans SC", "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif; }
-      .small { font-size: 22px; letter-spacing: 0.04em; }
-      .body { font-size: 26px; }
-      .label { font-size: 24px; font-weight: 760; }
-      .hint { font-size: 20px; }
+      .type { font-family: Inter, "Microsoft YaHei", "PingFang SC", sans-serif; }
     </style>
   </defs>
 
-  <rect width="1280" height="640" rx="0" fill="url(#bg)"/>
-  <rect width="1280" height="640" fill="url(#violetGlow)"/>
-  <rect width="1280" height="640" fill="url(#cyanGlow)"/>
-  <rect width="1280" height="640" fill="url(#pinkGlow)"/>
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <rect width="1280" height="640" fill="url(#glowA)"/>
+  <rect width="1280" height="640" fill="url(#glowB)"/>
 
-  <g opacity="0.16">
-    <path d="M-40 514C118 430 248 520 398 444C548 368 604 246 788 284C974 322 1046 446 1328 330" stroke="#67E8F9" stroke-width="2"/>
-    <path d="M-28 160C174 210 282 68 462 116C626 160 690 248 864 210C1036 172 1098 70 1308 118" stroke="#C4B5FD" stroke-width="2"/>
+  <g opacity="0.12">
+    <path d="M-80 400C150 292 322 470 540 342C758 214 906 292 1360 178" stroke="#FFFFFF" stroke-width="1.4"/>
+    <path d="M-80 204C188 282 320 102 538 178C756 254 914 154 1360 246" stroke="#FFFFFF" stroke-width="1.2"/>
   </g>
 
-  <g class="font">
-    <g transform="translate(92 96)">
-      <rect x="0" y="0" width="356" height="54" rx="27" fill="#FFFFFF" fill-opacity="0.08" stroke="#FFFFFF" stroke-opacity="0.12"/>
-      <circle cx="31" cy="27" r="8" fill="#34D399"/>
-      <text x="55" y="35" fill="#C4B5FD" class="small" font-weight="700">中文决策协议 · Agent Skill</text>
-    </g>
-
-    <text x="92" y="230" fill="url(#heroText)" font-size="76" font-weight="900" letter-spacing="-0.045em">平行自我委员会</text>
-    <text x="96" y="290" fill="#D9E2F1" font-size="31" font-weight="650">让多个版本的你坐下来，把纠结拆成可验证的下一步。</text>
-    <text x="96" y="336" fill="#91A4BE" font-size="24" font-weight="500">证据先说话，风险有边界，行动可回滚。</text>
-
-    <g transform="translate(96 394)">
-      <rect x="0" y="0" width="132" height="56" rx="18" fill="#111827" fill-opacity="0.78" stroke="#7C3AED" stroke-opacity="0.62"/>
-      <text x="66" y="36" text-anchor="middle" fill="#EDE9FE" font-size="23" font-weight="800">证据</text>
-      <rect x="150" y="0" width="132" height="56" rx="18" fill="#111827" fill-opacity="0.78" stroke="#22D3EE" stroke-opacity="0.62"/>
-      <text x="216" y="36" text-anchor="middle" fill="#CFFAFE" font-size="23" font-weight="800">反证</text>
-      <rect x="300" y="0" width="176" height="56" rx="18" fill="#111827" fill-opacity="0.78" stroke="#34D399" stroke-opacity="0.62"/>
-      <text x="388" y="36" text-anchor="middle" fill="#D1FAE5" font-size="23" font-weight="800">回滚线</text>
-    </g>
-
-    <rect x="96" y="486" width="430" height="6" rx="3" fill="url(#accent)"/>
-    <text x="96" y="532" fill="#B6C4D8" font-size="23" font-weight="600">不是鸡汤，不是算命，也不假装接入任何服务。</text>
+  <g transform="translate(640 320)">
+    <circle r="218" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="1"/>
+    <circle r="164" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1"/>
+    <circle r="102" stroke="url(#ring)" stroke-opacity="0.9" stroke-width="1.8"/>
+    <circle r="88" fill="#020617" fill-opacity="0.2"/>
+    <circle cx="-164" cy="-74" r="8" fill="#A78BFA"/>
+    <circle cx="166" cy="-76" r="8" fill="#22D3EE"/>
+    <circle cx="-114" cy="170" r="8" fill="#F472B6"/>
+    <circle cx="142" cy="154" r="8" fill="#34D399"/>
+    <circle r="38" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.18"/>
+    <circle r="10" fill="#EDE9FE" filter="url(#blur)" opacity="0.82"/>
   </g>
 
-  <g filter="url(#shadow)">
-    <rect x="682" y="88" width="506" height="464" rx="38" fill="url(#panel)" stroke="#6B7C93" stroke-opacity="0.28" stroke-width="1.4"/>
-    <rect x="712" y="118" width="446" height="404" rx="28" fill="#020617" fill-opacity="0.42" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  <g class="type" text-anchor="middle">
+    <text x="640" y="310" fill="url(#title)" font-size="82" font-weight="850" letter-spacing="-0.055em">平行自我委员会</text>
+    <text x="640" y="366" fill="#AFC1D8" font-size="25" font-weight="500" letter-spacing="0.12em">证据 · 反证 · 回滚</text>
   </g>
 
-  <g class="font" transform="translate(734 148)">
-    <g>
-      <circle cx="16" cy="16" r="8" fill="#F87171"/>
-      <circle cx="44" cy="16" r="8" fill="#FBBF24"/>
-      <circle cx="72" cy="16" r="8" fill="#34D399"/>
-      <text x="318" y="23" text-anchor="end" fill="#8FA2BB" font-size="19" font-weight="700">今日议题</text>
-    </g>
-
-    <g filter="url(#softShadow)">
-      <rect x="0" y="70" width="392" height="96" rx="24" fill="url(#card1)" stroke="#A78BFA" stroke-opacity="0.36"/>
-      <text x="28" y="110" fill="#F8FAFC" font-size="26" font-weight="820">要不要辞职做自己的产品？</text>
-      <text x="28" y="144" fill="#BFD0EA" font-size="20" font-weight="650">信心：中低 · 可逆性：中 · 先验证付费</text>
-    </g>
-
-    <g transform="translate(0 194)">
-      <rect x="0" y="0" width="392" height="62" rx="20" fill="#FFFFFF" fill-opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.1"/>
-      <circle cx="34" cy="31" r="17" fill="#7C3AED"/>
-      <text x="34" y="39" text-anchor="middle" fill="#FFFFFF" font-size="20" font-weight="900">现</text>
-      <text x="66" y="26" fill="#F5F3FF" class="label">现实资源官</text>
-      <text x="230" y="26" fill="#96A8C2" class="hint">先稳住现金流</text>
-      <rect x="302" y="36" width="58" height="12" rx="6" fill="#7C3AED" fill-opacity="0.56"/>
-    </g>
-
-    <g transform="translate(0 270)">
-      <rect x="0" y="0" width="392" height="62" rx="20" fill="#FFFFFF" fill-opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.1"/>
-      <circle cx="34" cy="31" r="17" fill="#22D3EE"/>
-      <text x="34" y="39" text-anchor="middle" fill="#042F3A" font-size="20" font-weight="900">长</text>
-      <text x="66" y="26" fill="#ECFEFF" class="label">长期主义者</text>
-      <text x="230" y="26" fill="#96A8C2" class="hint">看五年后的代价</text>
-      <rect x="302" y="36" width="86" height="12" rx="6" fill="#22D3EE" fill-opacity="0.56"/>
-    </g>
-
-    <g transform="translate(0 346)">
-      <rect x="0" y="0" width="392" height="62" rx="20" fill="#FFFFFF" fill-opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.1"/>
-      <circle cx="34" cy="31" r="17" fill="#34D399"/>
-      <text x="34" y="39" text-anchor="middle" fill="#052E22" font-size="20" font-weight="900">行</text>
-      <text x="66" y="26" fill="#ECFDF5" class="label">行动设计师</text>
-      <text x="230" y="26" fill="#96A8C2" class="hint">24 小时验证</text>
-      <rect x="302" y="36" width="72" height="12" rx="6" fill="#34D399" fill-opacity="0.56"/>
-    </g>
-  </g>
-
-  <g class="font" filter="url(#softShadow)">
-    <rect x="756" y="508" width="348" height="64" rx="22" fill="#0B1220" stroke="#34D399" stroke-opacity="0.42"/>
-    <text x="790" y="548" fill="#D1FAE5" font-size="23" font-weight="800">下一步：联系 5 个试用用户</text>
-  </g>
+  <rect x="528" y="430" width="224" height="2" rx="1" fill="url(#ring)" opacity="0.72"/>
 </svg>

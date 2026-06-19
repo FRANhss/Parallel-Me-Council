@@ -1,0 +1,67 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="g1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(220 140) rotate(35) scale(620 420)">
+      <stop stop-color="#7C3AED" stop-opacity="0.95"/>
+      <stop offset="0.55" stop-color="#0F172A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1000 120) rotate(130) scale(580 380)">
+      <stop stop-color="#06B6D4" stop-opacity="0.75"/>
+      <stop offset="0.62" stop-color="#020617" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="card" x1="150" y1="118" x2="1128" y2="540" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#020617" stop-opacity="0.88"/>
+    </linearGradient>
+    <linearGradient id="line" x1="232" y1="232" x2="1048" y2="232" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A78BFA"/>
+      <stop offset="0.5" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#F472B6"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+  <rect width="1280" height="640" fill="#020617"/>
+  <rect width="1280" height="640" fill="url(#g1)"/>
+  <rect width="1280" height="640" fill="url(#g2)"/>
+  <g opacity="0.28">
+    <path d="M0 520C210 455 335 575 525 508C715 441 785 330 987 364C1109 385 1192 430 1280 404" stroke="#67E8F9" stroke-width="2"/>
+    <path d="M0 106C176 150 300 64 470 116C628 164 690 261 880 224C1048 191 1128 92 1280 126" stroke="#C084FC" stroke-width="2"/>
+  </g>
+  <rect x="108" y="82" width="1064" height="476" rx="36" fill="url(#card)" stroke="#334155" stroke-width="1.5"/>
+  <rect x="142" y="116" width="996" height="408" rx="28" stroke="#1E293B" stroke-width="1"/>
+  <circle cx="640" cy="322" r="116" fill="#0F172A" stroke="#475569" stroke-width="2"/>
+  <circle cx="640" cy="322" r="88" fill="#111827" stroke="#22D3EE" stroke-opacity="0.55"/>
+  <circle cx="640" cy="322" r="54" fill="#020617" stroke="#A78BFA" stroke-width="2"/>
+  <text x="640" y="312" text-anchor="middle" fill="#E0F2FE" font-family="Inter, 'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="26" font-weight="800">议会</text>
+  <text x="640" y="346" text-anchor="middle" fill="#94A3B8" font-family="Inter, 'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="16">证据 · 反证 · 回滚</text>
+  <g filter="url(#soft)" opacity="0.55">
+    <circle cx="315" cy="236" r="34" fill="#A78BFA"/>
+    <circle cx="965" cy="236" r="34" fill="#22D3EE"/>
+    <circle cx="372" cy="430" r="34" fill="#F472B6"/>
+    <circle cx="908" cy="430" r="34" fill="#34D399"/>
+  </g>
+  <g stroke="url(#line)" stroke-width="2" opacity="0.65">
+    <path d="M350 238L552 300"/>
+    <path d="M930 238L728 300"/>
+    <path d="M406 424L562 354"/>
+    <path d="M874 424L718 354"/>
+  </g>
+  <g font-family="Inter, 'Microsoft YaHei', 'PingFang SC', sans-serif">
+    <rect x="220" y="188" width="188" height="96" rx="22" fill="#0F172A" stroke="#7C3AED" stroke-opacity="0.7"/>
+    <text x="314" y="228" text-anchor="middle" fill="#F8FAFC" font-size="20" font-weight="700">现实资源官</text>
+    <text x="314" y="258" text-anchor="middle" fill="#A5B4FC" font-size="14">钱 · 时间 · 精力</text>
+    <rect x="872" y="188" width="188" height="96" rx="22" fill="#0F172A" stroke="#06B6D4" stroke-opacity="0.7"/>
+    <text x="966" y="228" text-anchor="middle" fill="#F8FAFC" font-size="20" font-weight="700">长期主义者</text>
+    <text x="966" y="258" text-anchor="middle" fill="#67E8F9" font-size="14">五年后的代价</text>
+    <rect x="244" y="382" width="214" height="96" rx="22" fill="#0F172A" stroke="#F472B6" stroke-opacity="0.7"/>
+    <text x="351" y="422" text-anchor="middle" fill="#F8FAFC" font-size="20" font-weight="700">情绪诚实者</text>
+    <text x="351" y="452" text-anchor="middle" fill="#F9A8D4" font-size="14">害怕什么，想要什么</text>
+    <rect x="822" y="382" width="214" height="96" rx="22" fill="#0F172A" stroke="#34D399" stroke-opacity="0.7"/>
+    <text x="929" y="422" text-anchor="middle" fill="#F8FAFC" font-size="20" font-weight="700">行动设计师</text>
+    <text x="929" y="452" text-anchor="middle" fill="#86EFAC" font-size="14">24小时最小验证</text>
+  </g>
+  <text x="640" y="178" text-anchor="middle" fill="#F8FAFC" font-family="Inter, 'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="58" font-weight="900">平行自我委员会</text>
+  <text x="640" y="226" text-anchor="middle" fill="#CBD5E1" font-family="Inter, 'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="22">把纠结变成一场有证据、有反证、有回滚线的内部董事会</text>
+  <text x="640" y="528" text-anchor="middle" fill="#94A3B8" font-family="Inter, 'Microsoft YaHei', 'PingFang SC', sans-serif" font-size="18">一个中文优先的 Agent Skill · 不是鸡汤 · 不是算命 · 不是假装接入服务</text>
+</svg>

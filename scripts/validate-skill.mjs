@@ -6,12 +6,12 @@ const skillPath = join(root, 'skills', 'parallel-me-council', 'SKILL.md');
 const text = readFileSync(skillPath, 'utf8');
 
 function fail(message) {
-  console.error(`Skill validation failed: ${message}`);
+  console.error(`技能校验失败：${message}`);
   process.exit(1);
 }
 
 const match = /^---\n([\s\S]*?)\n---\n([\s\S]*)$/u.exec(text);
-if (!match) fail('missing YAML frontmatter');
+if (!match) fail('缺少 YAML frontmatter');
 
 const frontmatter = match[1];
 const body = match[2];
@@ -24,25 +24,25 @@ const requiredMetadata = [
   'tags:',
 ];
 for (const key of requiredMetadata) {
-  if (!frontmatter.includes(key)) fail(`missing metadata field ${key}`);
+  if (!frontmatter.includes(key)) fail(`缺少元数据字段 ${key}`);
 }
 
 const requiredBodyPhrases = [
-  'Safety gate',
-  'Red safety path',
-  'Professional-boundary path',
-  'Intake protocol',
-  'Council members',
-  'Required council card format',
-  'Vote definitions',
-  'Final decision protocol',
-  '24-Hour Minimum Action',
-  '7-Day Validation Plan',
-  'Rollback Plan',
+  '安全闸门',
+  '红色安全路径',
+  '专业边界路径',
+  '信息采集',
+  '委员会成员',
+  '成员发言格式',
+  '投票含义',
+  '最终决策协议',
+  '24 小时最小行动',
+  '7 天验证计划',
+  '回滚方案',
 ];
 
 for (const phrase of requiredBodyPhrases) {
-  if (!body.includes(phrase)) fail(`missing body phrase ${phrase}`);
+  if (!body.includes(phrase)) fail(`缺少正文短语 ${phrase}`);
 }
 
 const forbidden = [
@@ -54,7 +54,7 @@ const forbidden = [
   ['接口', '设置'].join(''),
 ];
 for (const term of forbidden) {
-  if (text.includes(term)) fail(`contains removed app term ${term}`);
+  if (text.includes(term)) fail(`包含已移除旧应用词汇 ${term}`);
 }
 
-console.log('Skill validation passed.');
+console.log('技能校验通过。');

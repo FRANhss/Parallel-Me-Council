@@ -1,8 +1,8 @@
 {
   "name": "parallel-me-council-skill",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": false,
-  "description": "Parallel Me Council skill: an evidence-based decision council protocol for AI agents.",
+  "description": "平行自我委员会：把纠结拆成证据、反证、风险、行动试验和回滚条件的中文 Agent Skill。",
   "type": "module",
   "scripts": {
     "build": "npm run typecheck && node scripts/validate-skill.mjs && node scripts/render-sample.mjs",
@@ -14,12 +14,12 @@
     "test:watch": "vitest"
   },
   "keywords": [
-    "agent-skill",
-    "decision-making",
-    "parallel-me-council",
-    "slash-command",
-    "ai-workflow",
-    "decision-protocol"
+    "平行自我委员会",
+    "决策",
+    "证据",
+    "风险",
+    "回滚",
+    "agent-skill"
   ],
   "author": "FRANhss",
   "license": "MIT",

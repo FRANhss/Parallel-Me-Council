@@ -26,7 +26,7 @@ function repositoryText(): string {
     .join('\n');
 }
 
-describe('repository cleanliness', () => {
+describe('仓库首页与清理状态', () => {
   it.each(['src', 'src-tauri', 'index.html', 'vite.config.ts', 'Python'])(
     'does not keep old path %s',
     (path) => {
@@ -64,5 +64,23 @@ describe('repository cleanliness', () => {
 
   it('ships the skill directory', () => {
     expect(existsSync(join(root, 'skills', 'parallel-me-council', 'SKILL.md'))).toBe(true);
+  });
+
+  it('README 使用视觉封面', () => {
+    const readme = readFileSync(join(root, 'README.md'), 'utf8');
+    expect(readme).toContain('assets/parallel-me-council-cover.svg');
+  });
+
+  it('README 大量使用中文产品表达', () => {
+    const readme = readFileSync(join(root, 'README.md'), 'utf8');
+    expect(readme).toContain('把纠结变成一场有证据、有反证、有回滚线的内部董事会');
+    expect(readme).toContain('委员会成员');
+    expect(readme).toContain('输出长什么样');
+  });
+
+  it('仓库包含中文 SVG 封面', () => {
+    const cover = readFileSync(join(root, 'assets', 'parallel-me-council-cover.svg'), 'utf8');
+    expect(cover).toContain('平行自我委员会');
+    expect(cover).toContain('现实资源官');
   });
 });

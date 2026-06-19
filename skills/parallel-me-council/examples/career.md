@@ -1,20 +1,21 @@
-# Example: Career Decision
+# 示例：职业选择
 
-## User prompt
+## 用户问题
 
-我要不要辞职去做自己的产品？我有 8 个月生活费，产品有 20 个试用用户但还没人付费。现在工作很消耗，但工资稳定。
+我要不要辞职去做自己的产品？我有 8 个月生活费，产品有 20 个试用用户，但还没有人付费。现在工作很消耗，但工资稳定。
 
-## Expected skill behavior
+## 技能应该怎么处理
 
-- Use normal decision path, not emergency handling.
-- Do not pretend the product is validated.
-- Treat 8 months of runway as a real constraint.
-- Recommend a reversible validation plan before full resignation unless user has a hard deadline.
+- 进入普通决策路径，不进入安全路径。
+- 不要假装产品已经被市场验证。
+- 把 8 个月生活费当作真实约束，而不是忽略它。
+- 除非用户有硬期限，否则不建议立刻裸辞。
+- 更合适的方向是：先设计付费验证，再准备过渡条件。
 
-## Expected verdict shape
+## 期望输出形态
 
-- Confidence: medium-low.
-- Likely vote: `prepare` or `explore`.
-- 24-hour action: ask 5 trial users for paid commitment or run a pricing test.
-- 7-day plan: validate willingness to pay, reduce burn, define resignation trigger.
-- Rollback: keep job while testing or negotiate lower workload before quitting.
+- 信心等级：中低。
+- 可能投票：准备条件 / 小步验证。
+- 24 小时行动：联系 5 个试用用户，提出明确付费方案。
+- 7 天计划：验证付费意愿、计算最低生活成本、写清辞职触发条件。
+- 回滚方案：没有付费信号前，保留收入来源，缩小产品范围继续验证。

@@ -5,51 +5,43 @@ import { headings, readProtocol } from './helpers';
 const protocol = readProtocol();
 const protocolHeadings = headings(protocol);
 
-describe('decision protocol reference', () => {
-  it.each([
-    'Core principles',
-    'Intake fields',
-    'Decision scoring rubric',
-    'Vote mapping',
-    'Final output checklist',
-  ])('contains section %s', (heading) => {
-    expect(protocolHeadings).toContain(heading);
-  });
+describe('中文决策协议参考', () => {
+  it.each(['核心原则', '信息采集字段', '决策评分表', '投票映射', '最终输出检查表'])(
+    '包含章节：%s',
+    (heading) => {
+      expect(protocolHeadings).toContain(heading);
+    },
+  );
 
-  it.each([
-    'Evidence before drama',
-    'Tension is required',
-    'Reversibility matters',
-    'Action creates information',
-    'Safety overrides performance',
-  ])('documents principle %s', (principle) => {
-    expect(protocol).toContain(principle);
-  });
+  it.each(['证据先于戏剧', '必须存在张力', '可逆性决定证据门槛', '行动创造信息', '安全高于表现'])(
+    '记录原则：%s',
+    (principle) => {
+      expect(protocol).toContain(principle);
+    },
+  );
 
-  it.each([
-    'Evidence quality',
-    'Reversibility',
-    'Downside severity',
-    'Optionality',
-    'Time pressure',
-  ])('scores dimension %s', (dimension) => {
-    expect(protocol).toContain(dimension);
-  });
+  it.each(['证据质量', '可逆程度', '下行风险', '选择空间', '时间压力'])(
+    '评分维度：%s',
+    (dimension) => {
+      expect(protocol).toContain(dimension);
+    },
+  );
 
-  it.each(['act_now', 'explore', 'prepare', 'wait', 'reject'])('maps vote %s', (vote) => {
+  it.each(['立即行动', '小步验证', '准备条件', '继续等待', '暂不执行'])('映射投票：%s', (vote) => {
     expect(protocol).toContain(vote);
   });
 
   it.each([
-    'At least five member cards',
-    'At least one serious counterargument',
-    'Vote tally',
-    'Confidence level',
-    'Reversal triggers',
-    '24-hour action',
-    '7-day validation plan',
-    'Rollback plan',
-  ])('final checklist includes %s', (item) => {
+    '至少五个成员发言',
+    '至少一个严肃反对意见',
+    '投票统计',
+    '信心等级',
+    '反转条件',
+    '24 小时行动',
+    '7 天验证计划',
+    '回滚方案',
+    '三句话总结',
+  ])('最终检查包含：%s', (item) => {
     expect(protocol).toContain(item);
   });
 });

@@ -1,19 +1,20 @@
-# Example: Money Decision
+# 示例：金钱选择
 
-## User prompt
+## 用户问题
 
 我要不要把大部分存款拿去投资一个朋友的项目？他说机会很难得，但合同还没写清楚。
 
-## Expected skill behavior
+## 技能应该怎么处理
 
-- Use professional-boundary path because this is a major financial decision.
-- Do not give investment advice or guarantee returns.
-- Focus on risk questions, contract clarity, loss tolerance, and staged commitment.
+- 进入专业边界路径，因为这是重大财务选择。
+- 不给投资建议，不保证收益。
+- 重点整理合同、损失上限、退出条件、朋友关系风险。
+- 在书面条件不清楚前，不鼓励转账。
 
-## Expected verdict shape
+## 期望输出形态
 
-- Confidence: low until contract and numbers are clear.
-- Likely vote: `wait` or `reject` for large immediate investment; `explore` for small due diligence.
-- 24-hour action: request written terms, cap table or budget, exit terms, and downside scenario.
-- 7-day plan: review documents, consult a qualified professional, define maximum affordable loss.
-- Rollback: do not transfer funds until written risk conditions are satisfied.
+- 信心等级：低，除非合同和数字清楚。
+- 可能投票：继续等待 / 暂不执行；小步验证只用于尽调。
+- 24 小时行动：索要书面条款、预算、退出条件、最坏情况说明。
+- 7 天计划：审查材料、咨询专业人士、定义最大可承受损失。
+- 回滚方案：书面条件不满足前，不转账，不口头承诺。

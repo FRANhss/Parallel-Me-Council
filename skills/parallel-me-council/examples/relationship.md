@@ -1,20 +1,20 @@
-# Example: Relationship Decision
+# 示例：关系选择
 
-## User prompt
+## 用户问题
 
 我要不要继续投入这段关系？对方说喜欢我，但经常消失。我每次都很焦虑，也不知道是不是我太敏感。
 
-## Expected skill behavior
+## 技能应该怎么处理
 
-- Separate facts from interpretation.
-- Include Emotional Witness and Relationship and Ethics Observer.
-- Avoid telling the user to immediately cut off or blindly endure.
-- Design a boundary-setting conversation and observation window.
+- 区分事实和解释：事实是“经常消失”，解释可能是“不在乎我”。
+- 必须让情绪诚实者和关系与伦理观察者发言。
+- 不要直接劝用户分开，也不要劝用户继续忍。
+- 设计一次清晰边界沟通，再设置观察窗口。
 
-## Expected verdict shape
+## 期望输出形态
 
-- Confidence: medium.
-- Likely vote: `explore`.
-- 24-hour action: write one clear boundary message and ask for a specific communication expectation.
-- 7-day plan: observe whether behavior changes, not just whether words sound good.
-- Rollback: reduce emotional investment if actions remain inconsistent.
+- 信心等级：中等。
+- 可能投票：小步验证。
+- 24 小时行动：写一条清晰但不攻击的边界消息。
+- 7 天计划：观察对方行动是否改变，而不是只听承诺。
+- 回滚方案：如果行动持续不一致，降低投入，保护情绪资源。

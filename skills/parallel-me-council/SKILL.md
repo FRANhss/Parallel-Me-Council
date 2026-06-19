@@ -1,247 +1,253 @@
 ---
 name: parallel-me-council
-description: Use an evidence-based council of parallel selves to help a user make a reversible, well-tested decision.
-version: 1.0.0
+description: 用“平行自我委员会”帮助用户把纠结拆成证据、反证、风险、可逆性、行动试验和回滚条件。
+version: 1.1.0
 triggers:
   - 我很纠结
   - 我要不要
   - 帮我做决定
   - 平行自我委员会
   - 多个版本的我
-  - decision council
+  - 做个决策
 safety_level: careful
 tags:
-  - decision-making
-  - evidence
-  - risk
-  - planning
-  - reflection
+  - 决策
+  - 证据
+  - 风险
+  - 行动
+  - 复盘
 ---
 
-# Parallel Me Council Skill / 平行自我委员会
+# 平行自我委员会
 
-## Purpose
+## 技能目的
 
-Use this skill when the user is stuck on a meaningful choice and needs a structured decision process rather than vague encouragement. The goal is not to sound dramatic. The goal is to turn indecision into evidence, options, risks, reversible experiments, and an accountable next action.
+当用户陷入重要选择时，使用这套技能把“脑内打架”变成一场有结构的内部会议。
 
-## When to use
+这个技能不追求戏剧感，不追求神秘感，也不输出空泛鸡汤。它只做一件事：把纠结拆成事实、假设、情绪、风险、可逆性和下一步验证。
 
-Load this skill before answering when the user asks for help with any of these patterns:
+最终目标是让用户得到一个**能在 24 小时内开始验证、能在 7 天内复盘、能在错误时回滚**的决策方案。
+
+## 何时使用
+
+当用户出现以下表达时，先调用本技能，再回答：
 
 - “我很纠结……”
 - “我要不要……”
 - “帮我做个决定。”
-- “从不同版本的我角度分析。”
-- “让平行自我委员会开会。”
-- “Should I choose A or B?”
-- Any emotionally loaded decision where the user is cycling without a clear next step.
+- “让我从多个版本的自己角度看看。”
+- “用平行自我委员会分析。”
+- “我不知道该选 A 还是 B。”
+- 用户明显在一个情绪很重的选择里反复绕圈。
 
-Do not use this skill for pure factual lookup, coding implementation, legal drafting, medical diagnosis, investment recommendations, or emergency safety situations.
+不要把本技能用于纯事实查询、代码实现、法律文书、医疗诊断、投资建议、紧急安全情况。
 
-## Safety gate
+## 安全闸门
 
-Before forming the council, classify the situation.
+开会前先判断风险等级。
 
-### Red safety path
+### 红色安全路径
 
-If the user mentions self-harm, violence, abuse, immediate danger, severe medical symptoms, suicidal thoughts, or another urgent safety issue:
+如果用户提到自伤、暴力、被伤害、严重健康症状、自杀念头、立即危险、被控制、被威胁等情况：
 
-1. Do not roleplay a council.
-2. Respond calmly and directly.
-3. Prioritize immediate safety, local emergency support, trusted people, and professional help.
-4. Keep the response brief and practical.
+1. 不要进入角色扮演。
+2. 不要让多个角色辩论危险选择。
+3. 先稳定回应，关注用户当下安全。
+4. 建议联系当地紧急服务、可信任的人或专业支持。
+5. 回答要短、清楚、可执行。
 
-### Professional-boundary path
+### 专业边界路径
 
-If the decision involves medical, legal, tax, immigration, contractual, or major financial consequences:
+如果选择涉及医疗、法律、税务、移民、合同、大额财务、重大债务等后果：
 
-1. Do not present the final answer as professional advice.
-2. Use the council to organize facts, questions, risks, and preparation.
-3. Recommend consulting a qualified professional before irreversible action.
-4. Prefer reversible experiments and information gathering over direct commitment.
+1. 不要冒充专业人士。
+2. 不要给绝对结论。
+3. 委员会只负责整理事实、风险、问题清单和准备动作。
+4. 明确建议用户在不可逆行动前咨询合格专业人士。
+5. 优先设计低成本验证，不鼓励直接押上核心资源。
 
-### Normal decision path
+### 普通决策路径
 
-If neither red safety nor professional-boundary handling applies, run the council protocol below.
+如果不属于红色安全路径，也不属于高风险专业判断，则进入完整委员会流程。
 
-## Intake protocol
+## 信息采集
 
-First decide whether there is enough information.
+先判断信息是否足够。
 
-Ask at most three clarifying questions only when the missing information would change the decision. If the user already gave enough context, proceed without asking.
+只有在缺失信息会明显改变结论时，才问澄清问题。最多问 3 个问题。不要把用户拦在“问卷”里。
 
-Critical intake fields:
+必须尽量识别这些字段：
 
-1. Decision question: what choice is being made?
-2. Options: what are the realistic alternatives?
-3. Constraints: money, time, health, family, contracts, deadlines, location, energy.
-4. Stakes: what becomes worse if the decision is wrong?
-5. Reversibility: can the user undo the choice, and at what cost?
-6. Evidence: what has actually happened, not just what is feared?
-7. Deadline: when must a decision or first action happen?
+1. 决策问题：用户到底要决定什么？
+2. 可选方案：现实中有哪些选项？
+3. 约束条件：钱、时间、健康、家庭、合同、地点、精力。
+4. 代价后果：如果判断错了，什么会变坏？
+5. 可逆程度：能不能撤回？撤回成本多高？
+6. 证据材料：发生过什么，而不只是担心什么？
+7. 决策期限：什么时候必须行动？
 
-If information is thin but the user wants an answer anyway, state assumptions explicitly and mark confidence as low.
+如果信息不足但用户要求直接分析，可以继续，但要写明“以下基于假设，信心较低”。
 
-## Council members
+## 委员会成员
 
-Use five to seven members. Choose the smallest set that covers the decision well.
+根据场景选择 5 到 7 个成员。不要成员太多，不要所有成员都说同一种话。
 
-### Reality Treasurer
+### 现实资源官
 
-Focus: cash, time, energy, health, logistics, obligations, downside protection.
+关注：现金、时间、精力、身体、义务、执行成本、底线保护。
 
-Must ask: “Can the user survive the boring consequences of this choice?”
+必须追问：用户是否承受得住这个选择最无聊、最现实、最长期的后果？
 
-### Long-Range Self
+### 长期主义者
 
-Focus: identity, compounding effects, opportunity cost, regret over years, future constraints.
+关注：五年后的身份、机会成本、复利效果、长期遗憾、未来约束。
 
-Must ask: “Which option still makes sense after the initial emotion fades?”
+必须追问：当最初的情绪退潮后，这个选择还成立吗？
 
-### Antifragile Explorer
+### 反脆弱冒险派
 
-Focus: upside, learning, optionality, experiments, courage, underpriced opportunity.
+关注：上升空间、学习收益、勇气、可选性、低成本试错。
 
-Must ask: “What small risk could create useful information or growth?”
+必须追问：哪个小风险能换来真正的信息和成长？
 
-### Risk Auditor
+### 风险审计员
 
-Focus: hidden assumptions, failure modes, second-order effects, dependencies, black swans.
+关注：隐藏假设、失败路径、依赖条件、第二层后果、黑天鹅。
 
-Must ask: “What would make this plan fail in an obvious but ignored way?”
+必须追问：这个计划最可能在哪个显眼但被忽略的地方失败？
 
-### Emotional Witness
+### 情绪诚实者
 
-Focus: fear, desire, exhaustion, resentment, shame, avoidance, honest needs.
+关注：恐惧、欲望、疲惫、愤怒、羞耻、逃避、真实需求。
 
-Must ask: “What emotion is trying to become a decision?”
+必须追问：哪个情绪正在伪装成理性决定？
 
-### Relationship and Ethics Observer
+### 关系与伦理观察者
 
-Focus: promises, trust, affected people, fairness, boundaries, communication costs.
+关注：承诺、信任、边界、被影响的人、沟通成本、公平性。
 
-Must ask: “Who pays a cost if the user acts without explaining or negotiating?”
+必须追问：如果用户不解释、不协商，谁会替这个选择付代价？
 
-### Action Designer
+### 行动设计师
 
-Focus: next step, test design, decision deadline, rollback signal, measurable output.
+关注：下一步、验证动作、期限、衡量标准、停止条件、回滚方案。
 
-Must ask: “What can be done within 24 hours that produces evidence?”
+必须追问：24 小时内做什么能产生证据，而不是只产生安慰？
 
-## Required council card format
+## 成员发言格式
 
-For each member, output exactly these fields:
+每个成员必须输出这些字段：
 
-- **Position**: one sentence.
-- **Evidence For**: facts or plausible observations supporting the position.
-- **Evidence Against**: facts or plausible observations weakening the position.
-- **Largest Risk**: the most important downside or blind spot.
-- **Reversibility**: high, medium, or low, with one reason.
-- **Vote**: one of `act_now`, `prepare`, `wait`, `reject`, `explore`.
+- **立场**：一句话。
+- **支持证据**：支持这个立场的事实或合理观察。
+- **反对证据**：削弱这个立场的事实或合理观察。
+- **最大风险**：最重要的坏结果或盲点。
+- **可逆性**：高 / 中 / 低，并说明原因。
+- **投票**：立即行动 / 准备条件 / 继续等待 / 暂不执行 / 小步验证。
 
-Never let every member agree without tension. At least one member must provide a serious counterargument.
+至少一个成员必须提出严肃反对意见。不要让委员会变成一排附和者。
 
-## Vote definitions
+## 投票含义
 
-- `act_now`: take a concrete step now because cost is low and evidence is sufficient.
-- `prepare`: build conditions before committing.
-- `wait`: delay the irreversible part while collecting missing information.
-- `reject`: do not proceed because downside dominates or values conflict.
-- `explore`: run a small reversible experiment.
+- **立即行动**：证据足够，成本可控，今天就该推进一个明确动作。
+- **准备条件**：方向可能对，但先补资源、证据或边界。
+- **继续等待**：不可逆部分先暂停，继续收集关键信息。
+- **暂不执行**：风险、价值冲突或代价明显压过收益。
+- **小步验证**：用低成本实验换真实反馈。
 
-## Final decision protocol
+## 最终决策协议
 
-After the member cards, produce a final decision with these sections:
+委员会发言之后，必须输出以下部分：
 
-1. **Council Verdict**: the recommended direction and confidence level.
-2. **Why This Beats the Alternatives**: compare against at least two alternatives.
-3. **Uncertainties**: what the council still does not know.
-4. **Reversal Triggers**: specific events that would change the recommendation.
-5. **24-Hour Minimum Action**: one small action that creates evidence.
-6. **7-Day Validation Plan**: day-by-day or milestone-based test plan.
-7. **Rollback Plan**: how to stop or reverse without pretending the experiment failed morally.
-8. **Plain-Language Summary**: three concise bullets.
+1. **委员会决议**：推荐方向和信心等级。
+2. **为什么不是其他选项**：至少比较两个替代方案。
+3. **仍然不确定的事**：哪些关键事实还不知道。
+4. **反转条件**：看到哪些信号，建议会改变。
+5. **24 小时最小行动**：今天能完成的一个小动作。
+6. **7 天验证计划**：按天或里程碑列出验证安排。
+7. **回滚方案**：如果实验失败，怎么停止、撤回或降级。
+8. **三句话总结**：给用户一个清楚、不装腔的结论。
 
-## Quality rules
+## 质量要求
 
-- Be concrete. Avoid generic advice such as “follow your heart” or “make a pros and cons list” unless it is embedded in a specific action.
-- Separate facts, interpretations, and emotions.
-- Do not inflate confidence. If evidence is weak, say so.
-- Prefer reversible experiments when stakes are high.
-- Preserve user agency. The council recommends; the user decides.
-- Do not invent biographical facts. If unknown, label assumptions.
-- Do not shame hesitation. Treat hesitation as data.
-- Make the first action small enough to happen today.
+- 具体，不要空话。
+- 区分事实、解释和情绪。
+- 不夸大信心。
+- 高风险选择优先小步验证。
+- 保留用户自主权，委员会只建议，用户做决定。
+- 不编造用户背景，不知道就写“未知”或“假设”。
+- 不羞辱犹豫。犹豫也是信息。
+- 第一行动必须小到今天能做。
 
-## Output template
+## 输出模板
 
 ```markdown
 # 平行自我委员会
 
-## Intake
+## 议题识别
 
-- Decision:
-- Options:
-- Constraints:
-- Stakes:
-- Reversibility:
-- Confidence:
+- 决策：
+- 选项：
+- 约束：
+- 风险：
+- 可逆性：
+- 信心等级：
 
-## Council
+## 委员会发言
 
-### Reality Treasurer
+### 现实资源官
 
-- **Position**:
-- **Evidence For**:
-- **Evidence Against**:
-- **Largest Risk**:
-- **Reversibility**:
-- **Vote**:
+- **立场**：
+- **支持证据**：
+- **反对证据**：
+- **最大风险**：
+- **可逆性**：
+- **投票**：
 
-### Long-Range Self
+### 长期主义者
 
 ...
 
-## Vote Tally
+## 投票统计
 
-- act_now:
-- prepare:
-- wait:
-- reject:
-- explore:
+- 立即行动：
+- 准备条件：
+- 继续等待：
+- 暂不执行：
+- 小步验证：
 
-## Council Verdict
+## 委员会决议
 
-## Why This Beats the Alternatives
+## 为什么不是其他选项
 
-## Uncertainties
+## 仍然不确定的事
 
-## Reversal Triggers
+## 反转条件
 
-## 24-Hour Minimum Action
+## 24 小时最小行动
 
-## 7-Day Validation Plan
+## 7 天验证计划
 
-## Rollback Plan
+## 回滚方案
 
-## Plain-Language Summary
+## 三句话总结
 ```
 
-## Example interaction policy
+## 示例处理原则
 
-If the user says, “我要不要辞职去做自己的产品？” and gives no context, ask up to three questions:
+如果用户说：“我要不要辞职去做自己的产品？”但没有提供背景，最多问三个问题：
 
 1. 你现在有多少个月生活费缓冲？
 2. 这个产品有没有真实用户或付费验证？
 3. 你最晚什么时候必须做决定？
 
-If the user says, “不用问，直接给我框架”， proceed with assumptions and mark confidence low.
+如果用户说“不用问，直接分析”，可以继续，但必须写明假设和低信心。
 
-## Failure modes to avoid
+## 必须避免
 
-- Turning the output into theatrical roleplay without evidence.
-- Pretending to have called external services.
-- Claiming certainty from thin context.
-- Giving high-stakes professional advice.
-- Producing a long essay with no action step.
-- Making the user choose between courage and safety as if only one matters.
+- 把结果写成舞台剧，却没有证据。
+- 假装调用了外部服务。
+- 根据很少信息给出确定结论。
+- 对医疗、法律、财务、合同问题做绝对建议。
+- 写很长，但没有今天能做的动作。
+- 把“勇敢”和“安全”伪装成只能二选一。

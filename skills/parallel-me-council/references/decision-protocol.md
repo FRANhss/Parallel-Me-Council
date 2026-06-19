@@ -1,49 +1,50 @@
-# Decision Protocol Reference
+# 决策协议参考
 
-The Parallel Me Council protocol converts a decision into a reversible evidence loop.
+平行自我委员会的核心不是“替用户决定”，而是把一个模糊选择变成可验证、可复盘、可回滚的行动方案。
 
-## Core principles
+## 核心原则
 
-1. **Evidence before drama**: every strong claim needs support or an assumption label.
-2. **Tension is required**: useful councils contain disagreement.
-3. **Reversibility matters**: low-reversibility decisions require stronger evidence.
-4. **Action creates information**: when evidence is missing, design a small test.
-5. **Safety overrides performance**: emergency or professional-risk contexts use guarded handling.
+1. **证据先于戏剧**：每个强判断都必须有证据，或者明确标成假设。
+2. **必须存在张力**：有用的委员会不能全员附和，至少要有一个严肃反对意见。
+3. **可逆性决定证据门槛**：越难撤回的选择，越需要强证据。
+4. **行动创造信息**：缺证据时，不要空想，要设计小实验。
+5. **安全高于表现**：危险场景、高风险专业场景，先进入安全路径。
 
-## Intake fields
+## 信息采集字段
 
-- Decision question
-- Options
-- Constraints
-- Stakes
-- Reversibility
-- Evidence
-- Deadline
+- 决策问题
+- 可选方案
+- 约束条件
+- 代价后果
+- 可逆程度
+- 已有证据
+- 决策期限
 
-## Decision scoring rubric
+## 决策评分表
 
-| Dimension         | Low             | Medium                  | High                            |
-| ----------------- | --------------- | ----------------------- | ------------------------------- |
-| Evidence quality  | mostly feelings | mixed facts and guesses | direct observations or tests    |
-| Reversibility     | hard to undo    | can undo with cost      | easy to undo                    |
-| Downside severity | annoyance       | material disruption     | health, legal, safety, survival |
-| Optionality       | narrows options | preserves some choices  | opens future options            |
-| Time pressure     | no deadline     | soft deadline           | hard external deadline          |
+| 维度     | 低         | 中             | 高                         |
+| -------- | ---------- | -------------- | -------------------------- |
+| 证据质量 | 主要是感受 | 事实和猜测混合 | 有直接观察或测试           |
+| 可逆程度 | 很难撤回   | 可撤回但有成本 | 容易撤回                   |
+| 下行风险 | 只是麻烦   | 明显影响生活   | 涉及健康、法律、安全、生存 |
+| 选择空间 | 会压缩选择 | 保留部分选择   | 打开更多选择               |
+| 时间压力 | 没有期限   | 软期限         | 硬期限                     |
 
-## Vote mapping
+## 投票映射
 
-- Strong evidence + low downside + high reversibility -> `act_now`
-- Important upside + unknowns -> `explore`
-- Weak evidence + high stakes -> `prepare` or `wait`
-- Value conflict + severe downside -> `reject`
+- 证据强、下行小、可逆性高：立即行动。
+- 有机会但未知多：小步验证。
+- 证据弱但事情重要：准备条件或继续等待。
+- 价值冲突明显、下行严重：暂不执行。
 
-## Final output checklist
+## 最终输出检查表
 
-- At least five member cards
-- At least one serious counterargument
-- Vote tally
-- Confidence level
-- Reversal triggers
-- 24-hour action
-- 7-day validation plan
-- Rollback plan
+- 至少五个成员发言
+- 至少一个严肃反对意见
+- 投票统计
+- 信心等级
+- 反转条件
+- 24 小时行动
+- 7 天验证计划
+- 回滚方案
+- 三句话总结
